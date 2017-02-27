@@ -424,7 +424,7 @@ You can use these for AZ awareness or attach your own labels and use the Downwar
 
 ## Is it possible to install Kubernetes into an existing VPC?
 
-With kops, this is possible. But having more than one Kubernetes cluster in a VPC is not supported.
+Yes, [with kops](https://github.com/kubernetes/kops/blob/master/docs/run_in_existing_vpc.md). It is possible to host multiple clusters in one VPC, as long as they don't share any subnets. It is ok to share egress resources between clusters. Multiple clusters in one VPC are coming in k8s 1.6.
 
 ## Is it possible to install Kubernetes into a private VPC?
 
